@@ -1,3 +1,4 @@
+---
 - name: Install Nginx
   hosts: server
   become: yes
@@ -16,3 +17,6 @@
         name: nginx
         state: started
         enabled: yes
+
+    - name: Change nginx file permissions
+      shell: "sudo chmod -R 755 /var/www/html & sudo chown -R ubuntu:ubuntu /var/www/html"
