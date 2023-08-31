@@ -13,8 +13,8 @@ Ansible: https://docs.ansible.com/ansible/latest/installation_guide/intro_instal
 
 
 # Guide
-Fork and clone the repository
-Cd to the working directory
+Fork and clone the repository.
+cd to the working directory.
 
 
 # Terraform part
