@@ -33,6 +33,9 @@ Initialize Terraform, plan, and apply
 
 
 # Ansible Setup
+Navigate to the directory that contains nginx.yml
+- cd 
+
 Review Ansible Playbook:
 Review the nginx.yml Ansible playbook file to ensure it aligns with your desired Nginx installation and configuration.
 
