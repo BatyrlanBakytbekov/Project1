@@ -51,7 +51,8 @@ The GitHub Actions workflow is defined in the .github/workflows/upload_to_ec2.ym
 It defines a single job named deploy that runs on an Ubuntu runner. This job contains the steps to deploy the index.html file.
 
 Pass configuration with env vars
-# Create ssh keypair and enter secrets in github settings/secrets
+
+Create ssh keypair and enter secrets in github settings/secrets
 1. SSH_PRIVATE_KEY [required]
 Private key part of an SSH key pair. The public key part should be added to the authorized_keys file on the server that receives the deployment.
 
