@@ -70,5 +70,5 @@ resource "local_file" "inventory" {
   depends_on = [aws_instance.maintask]
 
   content = "[server]\n${aws_instance.maintask.public_ip} ${var.inventory_content}" 
-  filename = /ansible/inventory.ini
+  filename = "/ansible/inventory.ini"
 }
