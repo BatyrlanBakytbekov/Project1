@@ -21,5 +21,3 @@ jobs:
           TARGET: ${{ secrets.REMOTE_TARGET_DIR }}
           SCRIPT_AFTER: |
             echo "Deployed new index.html"
-            sudo chown -R ubuntu:ubuntu /var/www/html
-            sudo chmod -R 755 /var/www/html
