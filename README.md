@@ -54,7 +54,9 @@ Pass configuration with env vars
 
 Create ssh keypair and enter secrets in github settings/secrets
 1. SSH_PRIVATE_KEY [required]
-Private key part of an SSH key pair. The public key part should be added to the authorized_keys file on the server that receives the deployment.
+Private key part of an SSH key pair.
+
+The public key part should be added to the **authorized_keys** file on the server that receives the deployment.
 
 More info for SSH keys: https://www.ssh.com/ssh/public-key-authentication
 
@@ -65,10 +67,13 @@ ssh-keygen -m PEM -t rsa -b 4096
 2. REMOTE_HOST [required]
 eg: mydomain.com
 
-3. REMOTE_USER [required]
-eg: myusername
+3. REMOTE_TARGET_DIR
+eg: /var/www/html
 
-4. REMOTE_PORT (optional, default '22')
+5. REMOTE_USER [required]
+eg: ubuntu
+
+6. REMOTE_PORT (optional, default '22')
 eg: '59184'
 
 # Cleanup
