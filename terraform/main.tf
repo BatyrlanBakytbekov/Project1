@@ -62,6 +62,7 @@ resource "aws_instance" "maintask" {
   instance_type          = var.instance_type
   subnet_id              = "subnet-0661942722a54dcf8"
   vpc_security_group_ids = [aws_security_group.security_terraform_batyrlan.id]
+  key_name               = var.keyname
   tags = var.common_tags
 }
 
