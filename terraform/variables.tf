@@ -37,3 +37,7 @@ variable "inventory_content" {
   default = "ansible_ssh_private_key_file=/Users/Admin/Documents/Batyrlan_key.pem ansible_user=ubuntu"
 }
 
+variable "keyname" {
+  type = string
+  default = "C:\Users\Admin\Documents\Accenture_Bootcamp\Batyrlan_key.pem"
+}
