@@ -54,27 +54,27 @@ Pass configuration with env vars
 
 Create ssh keypair and enter secrets in github settings/secrets
 1. SSH_PRIVATE_KEY [required]
-Private key part of an SSH key pair.
+   Private key part of an SSH key pair.
 
-The public key part should be added to the **authorized_keys** file on the server that receives the deployment.
-
-More info for SSH keys: https://www.ssh.com/ssh/public-key-authentication
-
-The keys should be generated using the PEM format. You can use this command
-
-- ssh-keygen -m PEM -t rsa -b 4096
+   The public key part should be added to the **authorized_keys** file on the server that receives the deployment.
+   
+   More info for SSH keys: https://www.ssh.com/ssh/public-key-authentication
+   
+   The keys should be generated using the PEM format. You can use this command
+   
+   - ssh-keygen -m PEM -t rsa -b 4096
 
 2. REMOTE_HOST [required]
-eg: mydomain.com
+   eg: mydomain.com
 
 3. REMOTE_TARGET_DIR
-eg: /var/www/html
+   eg: /var/www/html
 
 5. REMOTE_USER [required]
-eg: ubuntu
+   eg: ubuntu
 
 6. REMOTE_PORT (optional, default '22')
-eg: '59184'
+   eg: '59184'
 
 # Cleanup
 1. To remove the AWS resources created by Terraform, you can use
