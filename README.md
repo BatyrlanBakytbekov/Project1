@@ -52,7 +52,7 @@ Run Ansible Playbook
 # Github Actions Setup
 In this project, the GitHub Actions workflow is set to automatically deploy the index.html file to your AWS EC2 instance whenever changes are pushed to the main branch.
 
-The GitHub Actions workflow is defined in the .github/workflows/upload_to_ec2.yml file.
+The GitHub Actions workflow is defined in the .github/workflows/deploy.yml file.
 It defines a single job named deploy that runs on an Ubuntu runner. This job contains the steps to deploy the index.html file.
 
 Pass configuration with env vars
@@ -70,7 +70,7 @@ Create ssh keypair and enter secrets in github settings/secrets
    - ssh-keygen -m PEM -t rsa -b 4096
 
 2. REMOTE_HOST [required]
-   eg: mydomain.com
+   eg: {ipaddress}
 
 3. REMOTE_TARGET_DIR
    eg: /var/www/html
