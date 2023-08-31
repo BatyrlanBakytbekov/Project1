@@ -7,7 +7,7 @@ terraform {
     }
   }
 
-  required_version = ">= 0.14.9"
+  required_version = ">= 1.2.0"
 }
 
 # Fetch the latest Ubuntu AMI from AWS
