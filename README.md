@@ -23,8 +23,8 @@ Before starting, ensure that you've installed:
    aws configure
 
 Review Configuration
-NOTE: You may consider changing inventory_content and inventory_filename values (in variables.tf).
-They are responsible for creating inventory.ini and populating it with data
+- NOTE: You may consider changing inventory_content and inventory_filename values (in variables.tf).
+  They are responsible for creating inventory.ini and populating it with data
 
 Initialize Terraform, plan, and apply
 - terraform init
@@ -42,7 +42,7 @@ Review the nginx.yml Ansible playbook file to ensure it aligns with your desired
 Run Ansible Playbook
 1. Configure Nginx on the EC2 instances using the command below:
    ```bash
-   ansible-playbook --inventory-file=<location_to_the_directory>/cloud_bootcamp_final_task/inventory.ini install_nginx.yml
+   ansible-playbook --inventory-file=<location_to_the_directory>/inventory.ini nginx.yml
 
 - NOTE: Replace <location_to_the_directory>/cloud_bootcamp_final_task/inventory.ini with the path to your inventory file if it's in a different location
 
