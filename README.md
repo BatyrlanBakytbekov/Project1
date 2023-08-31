@@ -22,11 +22,11 @@ Before starting, ensure that you've installed:
    ```bash
    aws configure
 
-# Review Configuration
+Review Configuration
 NOTE: You may consider changing inventory_content and inventory_filename values (in variables.tf).
 They are responsible for creating inventory.ini and populating it with data
 
-# Initialize Terraform, plan, and apply
+Initialize Terraform, plan, and apply
 - terraform init
 - terraform plan
 - terraform apply
@@ -36,14 +36,14 @@ They are responsible for creating inventory.ini and populating it with data
 Review Ansible Playbook:
 Review the nginx.yml Ansible playbook file to ensure it aligns with your desired Nginx installation and configuration.
 
-# Run Ansible Playbook
+Run Ansible Playbook
 1. Configure Nginx on the EC2 instances using the command below:
    ```bash
    ansible-playbook --inventory-file=<location_to_the_directory>/cloud_bootcamp_final_task/inventory.ini install_nginx.yml
 
-NOTE: Replace <location_to_the_directory>/cloud_bootcamp_final_task/inventory.ini with the path to your inventory file if it's in a different location
+- NOTE: Replace <location_to_the_directory>/cloud_bootcamp_final_task/inventory.ini with the path to your inventory file if it's in a different location
 
-NOTE 2: You may consider chmod 600 <path_to_your_private_key/key.pem
+- NOTE 2: You may consider chmod 600 <path_to_your_private_key/key.pem
 
 
 # Github Actions Setup
