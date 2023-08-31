@@ -65,3 +65,10 @@ resource "aws_instance" "maintask" {
   tags = var.common_tags
 }
 
+
+resource "local_file" "inventory" {
+  depends_on = [aws_instance.maintask]
+
+  content = "[server]\n${aws_instance.maintask.public_ip} ${var.inventory_content}" 
+  filename = var.inventory_filename
+}
