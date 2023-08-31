@@ -1,5 +1,6 @@
 # Project Purpose
 This project aims to provide a guide for setting up and configuring an EC2 instance and nginx server on AWS using Terraform and Ansible.
+In addition, it aims to guide how to create a CI/CD Pipeline using GitHub Actions that takes an index.html file from the repository, and automatically uploads it to your nginx server when commit
 
 # Prerequisites
 Before starting, ensure that you've installed:
