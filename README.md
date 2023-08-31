@@ -26,3 +26,16 @@ aws configure
 NOTE: You may consider changing inventory_content and inventory_filename values (in variables.tf).
 They are responsible for creating inventory.ini and populating it with data
 
+# Initialize Terraform
+terraform init
+terraform plan
+terraform apply
+
+
+# Ansible Part
+Review Ansible Playbook
+Review nginx.yml Ansible playbook file to ensure it matches your desired Nginx installation and configuration.
+
+# Run Ansible Playbook
+The command below configures nginx on EC2
+ansible-playbook --inventory-file=<location_to_the_directory>/cloud_bootcamp_final_task/inventory.ini install_nginx.yml
