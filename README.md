@@ -14,7 +14,6 @@ Ansible: https://docs.ansible.com/ansible/latest/installation_guide/intro_instal
 
 # Guide
 Fork and clone the repository
- git clone
 Cd to the working directory
 
 
