@@ -62,7 +62,7 @@ More info for SSH keys: https://www.ssh.com/ssh/public-key-authentication
 
 The keys should be generated using the PEM format. You can use this command
 
-ssh-keygen -m PEM -t rsa -b 4096
+- ssh-keygen -m PEM -t rsa -b 4096
 
 2. REMOTE_HOST [required]
 eg: mydomain.com
