@@ -35,7 +35,7 @@ Review Ansible Playbook:
 Review the nginx.yml Ansible playbook file to ensure it aligns with your desired Nginx installation and configuration.
 
 # Run Ansible Playbook
-Configure Nginx on the EC2 instances using the command below:
+1. Configure Nginx on the EC2 instances using the command below:
    ```bash
 ansible-playbook --inventory-file=<location_to_the_directory>/cloud_bootcamp_final_task/inventory.ini install_nginx.yml
 
@@ -43,3 +43,34 @@ NOTE: Replace <location_to_the_directory>/cloud_bootcamp_final_task/inventory.in
 
 NOTE 2: You may consider chmod 600 <path_to_your_private_key/key.pem
 
+
+# Github Actions Setup
+In this project, the GitHub Actions workflow is set to automatically deploy the index.html file to your AWS EC2 instance whenever changes are pushed to the main branch.
+
+The GitHub Actions workflow is defined in the .github/workflows/upload_to_ec2.yml file.
+It defines a single job named deploy that runs on an Ubuntu runner. This job contains the steps to deploy the index.html file.
+
+Pass configuration with env vars
+# Create ssh keypair and enter secrets in github settings/secrets
+1. SSH_PRIVATE_KEY [required]
+Private key part of an SSH key pair. The public key part should be added to the authorized_keys file on the server that receives the deployment.
+
+More info for SSH keys: https://www.ssh.com/ssh/public-key-authentication
+
+The keys should be generated using the PEM format. You can use this command
+
+ssh-keygen -m PEM -t rsa -b 4096
+
+2. REMOTE_HOST [required]
+eg: mydomain.com
+
+3. REMOTE_USER [required]
+eg: myusername
+
+4. REMOTE_PORT (optional, default '22')
+eg: '59184'
+
+# Cleanup
+1. To remove the AWS resources created by Terraform, you can use
+   ```bash
+   terraform destroy
