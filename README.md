@@ -12,7 +12,9 @@ Before starting, ensure that you've installed:
 
 # Getting Started
 1. Fork and clone this repository.
-2. Navigate to the cloned repository's directory.
+   - git clone 
+3. Navigate to the cloned repository's directory.
+   - cd 
 
 
 # Terraform Setup
@@ -24,7 +26,7 @@ Before starting, ensure that you've installed:
 NOTE: You may consider changing inventory_content and inventory_filename values (in variables.tf).
 They are responsible for creating inventory.ini and populating it with data
 
-# Initialize Terraform
+# Initialize Terraform, plan, and apply
 - terraform init
 - terraform plan
 - terraform apply
