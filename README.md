@@ -19,7 +19,6 @@ Before starting, ensure that you've installed:
    ```bash
    aws configure
 
-
 # Review Configuration
 NOTE: You may consider changing inventory_content and inventory_filename values (in variables.tf).
 They are responsible for creating inventory.ini and populating it with data
