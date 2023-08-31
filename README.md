@@ -24,9 +24,9 @@ NOTE: You may consider changing inventory_content and inventory_filename values 
 They are responsible for creating inventory.ini and populating it with data
 
 # Initialize Terraform
-terraform init
-terraform plan
-terraform apply
+- terraform init
+- terraform plan
+- terraform apply
 
 
 # Ansible Setup
