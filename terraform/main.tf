@@ -64,3 +64,4 @@ resource "aws_instance" "maintask" {
   vpc_security_group_ids = [aws_security_group.security_terraform_batyrlan.id]
   tags = var.common_tags
 }
+
